@@ -9,7 +9,9 @@
 </head>
 <body>
 <header>
-    {{$banner}}
+    @if(isset($banner))
+        {{$banner}}
+    @endif
 </header>
 {{$content}}
 </body>
